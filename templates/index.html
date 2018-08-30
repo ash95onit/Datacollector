@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../static/main.css">
+    <meta charset="utf-8">
+    <title> Data collector app</title>
+  </head>
+  <body>
+      <div class="container">
+        <h1>Collecting Height</h1>
+        <h3>Please fill your entries on Height to get the statistics</h3>
+        <form action="{{url_for('success')}}" method="POST">
+
+          <input title="your email will be safe with us" placeholder="Enter your email id" type="email" name="email_name" required><br>
+          <input type="number" name="height_name" title="your height will be safe with us" placeholder="Enter your height" max="300" min="50"><br>
+          <button type="submit" name="button">Submit</button>
+        </form>
+      </div>
+  </body>
+</html>
